@@ -3,7 +3,7 @@ import requests
 import time
 
 # ---------------- CONFIG ----------------
-API_URL = "YOUR_CLOUD_RUN_URL/analyze"  # ← replace this
+API_URL = "https://fx-backend-235931086523.asia-south1.run.app/analyze"
 
 st.sidebar.header("⚙️ Controls")
 refresh_rate = st.sidebar.slider("Refresh Interval (seconds)", 2, 10, 5)
