@@ -2,16 +2,18 @@ import streamlit as st
 import requests
 import time
 
-# ---------------- CONFIG ----------------
-API_URL = "https://fx-backend-235931086523.asia-south1.run.app/analyze"
-
-st.sidebar.header("⚙️ Controls")
-refresh_rate = st.sidebar.slider("Refresh Interval (seconds)", 2, 10, 5)
-
+# 1. MUST BE THE FIRST STREAMLIT COMMAND
 st.set_page_config(
     page_title="FX Intelligence Dashboard",
     layout="wide",
 )
+
+# ---------------- CONFIG ----------------
+API_URL = "https://fx-backend-235931086523.asia-south1.run.app/analyze"
+
+# 2. NOW YOU CAN CALL OTHER ST COMMANDS
+st.sidebar.header("⚙️ Controls")
+refresh_rate = st.sidebar.slider("Refresh Interval (seconds)", 2, 10, 5)
 
 # ---------------- STYLING ----------------
 st.markdown("""
